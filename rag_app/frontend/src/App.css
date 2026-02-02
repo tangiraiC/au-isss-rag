@@ -1,0 +1,217 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  background-color: #f9f9f9;
+  color: #213547;
+}
+
+.disclaimer-banner {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ffeeba;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.2em;
+  color: #004fa3;
+  /* AU Blue */
+  text-transform: none;
+  /* Ensure case is respected */
+}
+
+.header p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.action-buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.reset-button {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reset-button:hover {
+  background-color: #5a6268;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 2px solid #004fa3;
+  border-color: #004fa3;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #E4002B;
+  /* AU Red */
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: #b00022;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.suggestions {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.suggestions p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.suggestion-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  background-color: #f0f4f8;
+  color: #004fa3;
+  border: 1px solid #d9e2ec;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.chip:hover {
+  background-color: #004fa3;
+  color: white;
+  border-color: #004fa3;
+}
+
+.results {
+  text-align: left;
+}
+
+.answer-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-left: 6px solid #E4002B;
+  /* AU Red highlight */
+}
+
+.citation-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #004fa3;
+  /* AU Blue highlight */
+}
+
+.citation-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #666;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.citation-content {
+  font-size: 0.95em;
+  line-height: 1.4;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+    /* Ensure input takes full width */
+    box-sizing: border-box;
+    /* Include padding in width */
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .suggestion-chips {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.env.local
+venv/
+.venv/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# System
+.DS_Store
+.idea/
+.vscode/
+
+# Data (optional, but good practice for large files)
+processed_data/
+# raw_documents/ # Uncomment if these are too large
